@@ -17,7 +17,7 @@ class AlgorithmTest extends TestCase
         $this->implementations[LuhnAlgorithm::class] = new LuhnAlgorithm();
     }
 
-    public function provideIsValidTestInput(): array
+    public static function provideIsValidTestInput(): array
     {
         return [
             'default'        => ['837668185', true],
@@ -33,7 +33,7 @@ class AlgorithmTest extends TestCase
         ];
     }
 
-    public function provideCheckDigitTestInput(): array
+    public static function provideCheckDigitTestInput(): array
     {
         return [
             'default'        => ['83766818', 5],
@@ -42,7 +42,7 @@ class AlgorithmTest extends TestCase
         ];
     }
 
-    public function provideCheckSumTestInput(): array
+    public static function provideCheckSumTestInput(): array
     {
         return [
             'default'        => ['3199723370002', 50],
